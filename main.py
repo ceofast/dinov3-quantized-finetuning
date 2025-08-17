@@ -43,7 +43,7 @@ def parse_args():
                        help="Ratio of validation data to use (default: 0.1 for quick training)")
     
     # Model arguments
-    parser.add_argument("--model_name", type=str, default="facebook/dinov3-vith16plus-pretrain-lvd1689",
+    parser.add_argument("--model_name", type=str, default="facebook/dinov3-vith16plus-pretrain-lvd1689m",
                        help="DINOv3 model name from Hugging Face")
     parser.add_argument("--freeze_backbone", action="store_true", default=True,
                        help="Freeze backbone and only train classification head")
